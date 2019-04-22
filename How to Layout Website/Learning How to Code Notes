@@ -1,0 +1,30 @@
+**Videos from Derek Banas https://www.youtube.com/channel/UCwRXb5dUK4cvsHbx-rGzSgw**
+Video #1: How to Layout a Website (16:48)
+* Use a pagewrapper div to encompass the entire page
+* The CSS property - position: relative - means moving the element from where it is originally placed on the site (or move it relative to itself). 
+* The CSS property - position: absolute - the element is relative to the parent.
+* The CSS property - z-position - can be used on elements with any position (absolute, relative).
+* The CSS property - top: (negative number) - moves the element UP while - top: (positive number) - moves the element DOWN
+* The CSS property - left: (negative number) - moves the element to the LEFT - left: (positive number) - moves the element RIGHT
+* The CSS property - z-position - can only be used on elements with a defined position. Also, the greater the number, the more infront the element will be.
+* Ensure proper visuals for all browsers (webkit browsers, IE, Firefox, etc.)
+* The CSS property - text-shadow - is useful for making a visual colorization difference between the same color.
+* BEFORE HIDING ANYTHING (drop-down menu, text, boxes, etc.) MAKE SURE YOU FIX IT WHILE IT'S VISIBLE SO YOU CAN INSPECT
+* INSPECT (Chrome tool) OFTEN to figure out what does what or if everything is encompassed correctly
+
+Video #2: How to Layout a Website 2 (15:51)
+* Comment the end of each div to know where each div starts and ends so you know exactly what to copy/paste if you need to repeat code
+* Remember to put general code above specific code in CSS (ex: margin: before margin-left: ) or else your general code will over-ride the specific code (cascading style sheet)
+* If you want text to wrap around an img, give the img margin properties and adjust it to your liking.  
+
+Video #3: How to Layout a Website 3 (10:38)
+* You will often reuse the same amount of code so keep your CSS classes generalized and then get more specific 
+* The CSS property - float: left pushes elements to the top left corner of the container. Having every element float left is basically pushing elements to the left to line up with each other. Use the CSS property - clear: to prevent other elements from being placed next to a floating element.
+
+Video #4: How to Layout a Website 4 (12:32)
+* SVG (Scalable Vector Graphics, .svg) are so useful compared to .png because no matter how you resize them, they present the entire image clearly. A great place to get them is flaticon.com since they offer some for free (offers a wide variety of social media icons for free at least.)
+* Gradients let you display smooth transitions between two or more specified colors. We used them for the header and footer.
+
+Video #5: How to Layout a Website 5 (12:52)
+* An alternative method to have text around an image is to float the image and set the padding for the image and margins for the text. (See Article section in HTML)
+* There will be plenty of guessing for margin/padding but you can use programs like Illustrator to create a layout before you start and measure the spaces between elements.

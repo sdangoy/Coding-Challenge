@@ -1,0 +1,350 @@
+#pageWrapper {
+	font: 14px/1.4 'PT Sans Narrow', sans-serif; /* 14px by 1.4 line height distance between characters */
+	width: 1000px; /* width of the entire web page */
+	background-color: #FFF; 
+	margin-left: auto; /* Makes everything centered on the screen */
+	margin-right: auto; /* Makes everything centered on the screen */
+	/* border: 5px solid black;  Temporary to see where header area is */
+}
+
+#header {
+	height: 127px;
+	width: 1000px; /* Should = to width of webpage */
+}
+
+#logo {
+	position: relative; /* From where it is currently */
+	left: 15px;
+	width: 150px;
+	height: 150px;
+	top: -15px;
+}
+
+#blogSlogan {
+	position: relative;
+	width: 240px;
+	left: 715px;
+	top: -150px;
+}
+
+#searchBox {
+	position: relative;
+	left: 715px;
+	top: -120px;
+	width: 500px;
+}
+
+div#menu {
+	background-color: #471F37;
+	position: relative; /* Needed to use z-index property */
+	z-index: 200; /* z-index indicates stack order. The greater number will be in front, lower number will be in the back. Works only on positioned elements */
+}
+
+table.navbar {
+	font: bold 16px/.5 'PT Sans Narrow', sans-serif;
+	text-shadow: 1px 1px 1px #000000; /* text-shadow: h-shadow|v-shadow|blur-radius|color; */
+	margin: 0px;
+	padding: 0px;
+}
+
+table.menu {
+	font-size: 10pt;
+	margin: 0px 0px;
+	padding: 0px;
+}
+
+td.menuNormal {
+	padding: 5px 0px 5px 5px;
+	width: 160px;
+	color: white;
+	vertical-align: top; /* Sets the vertical alignment to the top of the div */
+	background: #471F37;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5f2c4b', endColorstr='#471F37'); /* for IE */
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#5f2c4b), to(#471f37)); /* for webkit browsers */
+	background-image: -moz-linear-gradient(top,  #5f2c4b,  #471F37); /* for firefox 3.6+ */
+	border-left: 1px solid #5f2c4b;
+	border-right: 1px solid #471f37;
+}
+p.menuHead {
+	margin: 5px;
+}
+
+td.menuHover { /* Part of the CSS for the JS Code */
+	padding: 5px 0px 0px 5px;
+	width: 160px;
+	color: #0bd4ff;
+	vertical-align: top;
+	/* Not needed for drop-down menus with images */
+	background: #471f37;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5f2c4b', endColorstr='#471F37'); /* for IE */
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#5f2c4b), to(#471F37)); /* for webkit browsers */
+	background-image: -moz-linear-gradient(top,  #5f2c4b,  #471F37); /* for firefox 3.6+ */
+	border-left: 1px solid #471f37;
+	border-right: 1px solid #5f2c4b;
+}
+
+div.menuNormal {
+	display: none;/* This div should not be shown, hides the dropdown options, shows only the header of each menu column */
+	font: 12px/1.5 tahoma, sans-serif;
+	position: static; /* Tells element to just flow with everything else */
+}
+
+div.menuHover {
+	font: 14px/1.5 tahoma, sans-serif;
+	background: #471f37;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5f2c4b', endColorstr='#471F37'); /* for IE */
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#5f2c4b), to(#471F37)); /* for webkit browsers */
+	background-image: -moz-linear-gradient(top,  #5f2c4b,  #471F37); /* for firefox 3.6+ */
+	display: inline; /* Tells the div to generate an inline box with no line break */
+	position: absolute; /* Positions the element relative to the parent (the parent is the menu bar) */
+}
+
+a.menuitem:link {
+	text-decoration: none; /* Removes the underline for the drop down menu links */
+	color: white;
+	padding: 2.5px;
+	background: #471f37;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5f2c4b', endColorstr='#471F37'); /* for IE */
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#5f2c4b), to(#471F37)); /* for webkit browsers */
+	background-image: -moz-linear-gradient(top,  #5f2c4b,  #471F37); /* for firefox 3.6+ */
+	text-shadow: 1px 1px 1px #000000;
+	display: block; /* Display a line break before and after the box */
+}
+
+a.menuitem:visited {
+	text-decoration: none;
+	color: white;
+	padding: 2.5px;
+	background: #471f37;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5f2c4b', endColorstr='#000f2e'); /* for IE */
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#5f2c4b), to(#000f2e)); /* for webkit browsers */
+	background-image: -moz-linear-gradient(top,  #5f2c4b,  #471F37); /* for firefox 3.6+ */
+	border-bottom: 1px solid #5f2c4b;
+	border-top: 1px solid #471f37;
+	display: block;
+}
+
+a.menuitem:hover {
+	text-decoration: none;
+	color: #0bd4ff;
+	padding: 2.5px;
+	background: #471F37;
+	border-bottom: 1px solid #5f2c4b;
+	border-top: 1px solid #471f37;
+	display: block;
+}
+
+a.menuitem:active {
+	text-decoration: none;
+	color: #d8afbe;
+	padding: 2.5px;
+	background: #5f2c4b;
+	border-bottom: 1px solid #5f2c4b;
+	border-top: 1px solid #471F37;
+	display: block;
+}
+
+#contentWrapper {
+	background-color: #471f37;
+	float: left; /* Throw everything to the left of the screen */
+	width: 1000px;
+}
+
+#profile { /* Profile pic */
+	width: 73px;
+	height: 73px;
+	float: left;
+	padding-top: 5px;
+	padding-right: 4px;
+	padding-bottom: 4px;
+	padding-left: 2px;
+}
+
+#leftSidebar { /* The container for everything on the left */
+	float: left;
+}
+
+.leftContainer { /* A box on the left sidebar */
+	background-color: #fff;
+	border: 3px solid #000;
+	margin: 10px;
+	margin-right: 3px;
+	width: 177px;
+	height: 320px;
+	padding: 2px;
+}
+
+.bannerTitle { /* The small title box for each box */
+	font: 14px/1.4 'PT Sans Narrow', sans-serif;
+	background-color: #471F37;
+	color: #fff;
+	width: 96px;
+	height: 26px;
+	text-align: right;
+	padding-right: 6px;
+	position: relative;
+	left: 77px;
+	top: -21px;
+}
+
+.sidebarExcerpt { /* The small paragraph for each box */
+	position: relative;
+	left: 0px;
+	top: -60px;
+	color: #244f4f;
+}
+
+.featured { /* The box containing the title "Videos" */
+	background-color: #fff;
+	border: 3px solid #000;
+	margin: 10px;
+	margin-right: 3px;
+	width: 177px;
+	height: 350px;
+	padding: 2px;
+}
+
+.eachArticle { /* Articles inside "Videos" */
+	position: relative;
+	top: -18px;
+}
+
+.articleExcerpt { /* Paragraph for each article inside "Videos" */
+	color: #244f4f;
+	font-size: 10pt;
+	position: relative;
+	top: -10px;
+}
+
+.horzRule { /* Creates the horizontal line seperating articles in "Videos" */
+	background-color: #471f37;
+	height: 2px;
+	width: 170px;
+	margin-left: 3px;
+	position: relative;
+	top: -10px;
+}
+
+/* Beginning of Article Styling */
+.contentColumn {
+	width: 570px;
+	float: left;
+	margin-right: 20px;
+}
+
+.contentContainer{
+	background-color: #fff;
+	border: 3px solid #000;
+	margin: 10px;
+	width: 560px;
+	height: auto;
+	padding: 5px;
+}
+
+.contentTitle {
+	font: 14px/1.4 'PT Sans Narrow', sans-serif;
+	background-color: #471F37;
+	color: #fff;
+	width: 188px;
+	height: 26px;
+	text-align: right;
+	padding-right: 6px;
+	position: relative;
+	left: 365px;
+	top: -21px;
+	z-index: 20px;
+}
+
+.contentArtTitle {
+	font: 28px/1.8 'PT Sans Narrow', sans-serif;
+	padding-left: 4px;
+}
+
+.contentArtDate {
+	padding-left: 4px;
+	position: relative;
+	top: -10px;
+}
+
+.contentImage {
+	width: 160px;
+	height: 200px;
+	float: left;
+	padding: 5px 5px 5px 2px;
+}
+
+.horzcontentRule {
+	background-color: #471f37;
+	height: 2px;
+	width: 562px;
+	margin-left: 3px;
+}
+
+.contentExcerpt {
+	color: #244f4f;
+	font-size: 10pt;
+	margin-left: 3px;
+}
+
+#rightSidebar {
+	float: left;
+	margin-left: 0px;
+}
+
+.rightContainer {
+	background-color: #fff;
+	border: 3px solid #000;
+	margin: 10px;
+	margin-right: 0px;
+	width: 177px;
+	height: 269px;
+	padding: 2px;
+}
+
+#eBookForm {
+	position: relative;
+	top: -20px;
+	left: 2px;
+}
+
+.eBookExcerpt {
+	position: relative;
+	left: 2px;
+	top: -30px;
+	color: #244f4f;
+	font-size: 10pt;
+}
+
+.socialNetwork {
+	width: 40px;
+	height: 40px;
+}
+
+.socialIcons {
+	width: 177px;
+	margin-left: 18px;
+	padding: 2px;
+}
+
+.affiliateContainer {
+	background-color: #fff;
+	border: 3px solid #000;
+	margin-right: 0px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	width: 177px;
+	height: 158px;
+	padding: 2px;
+}
+
+#footer {
+	background: #471F37;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5f2c4b', endColorstr='#471F37'); /* for IE */
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#5f2c4b), to(#471f37)); /* for webkit browsers */
+	background-image: -moz-linear-gradient(top,  #5f2c4b,  #471F37); /* for firefox 3.6+ */
+	float: left;
+	width: 1000px;
+	height: 100px;
+	text-align: center;
+	color: #fff;
+}
